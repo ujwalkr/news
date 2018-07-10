@@ -14,9 +14,23 @@ class NewsTableViewCell: UITableViewCell {
         didSet {
             title.text = news?.title
             source.text = news?.source?.name
+            if let imageUrl = news?.urlToImage {
+                let url = URL(string: imageUrl)
+            
+            URLSession.shared.dataTask(with: url!) { (data, response, error) in
+                
+                guard let data = data else {print(" image data error"); return}
+                DispatchQueue.main.async {
+                    
+                    self.newsImage.image = UIImage(data: data)
+                }
+                
+            }.resume()
+        }
         }
     }
     
+    @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var source: UILabel!
     
