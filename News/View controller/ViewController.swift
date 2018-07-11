@@ -70,6 +70,13 @@ class ViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dropdown" {
+            if let _ = segue.destination as? DropdownViewController {
+                
+            }
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate {

@@ -16,6 +16,10 @@
 		844EBA3620F3764500C30393 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA3520F3764500C30393 /* NewsTableViewCell.swift */; };
 		844EBA3B20F37A2E00C30393 /* News+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA3A20F37A2E00C30393 /* News+extension.swift */; };
 		844EBA3D20F37DD300C30393 /* Source+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA3C20F37DD300C30393 /* Source+extension.swift */; };
+		844EBA3F20F4E15900C30393 /* DropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA3E20F4E15900C30393 /* DropdownViewController.swift */; };
+		844EBA4120F4E49300C30393 /* DropdownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA4020F4E49300C30393 /* DropdownTableViewCell.swift */; };
+		844EBA4A20F4F51600C30393 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA4920F4F51600C30393 /* HeaderView.swift */; };
+		844EBA4C20F4F52500C30393 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844EBA4B20F4F52500C30393 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		844EBA3520F3764500C30393 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		844EBA3A20F37A2E00C30393 /* News+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+extension.swift"; sourceTree = "<group>"; };
 		844EBA3C20F37DD300C30393 /* Source+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Source+extension.swift"; sourceTree = "<group>"; };
+		844EBA3E20F4E15900C30393 /* DropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewController.swift; sourceTree = "<group>"; };
+		844EBA4020F4E49300C30393 /* DropdownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTableViewCell.swift; sourceTree = "<group>"; };
+		844EBA4920F4F51600C30393 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		844EBA4B20F4F52500C30393 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +70,11 @@
 		844EBA1D20F370BE00C30393 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				844EBA4820F4F4FC00C30393 /* Views */,
 				844EBA3720F379F300C30393 /* model */,
 				844EBA3420F3760A00C30393 /* View controller */,
 				844EBA3520F3764500C30393 /* NewsTableViewCell.swift */,
+				844EBA4020F4E49300C30393 /* DropdownTableViewCell.swift */,
 				844EBA2220F370BE00C30393 /* Main.storyboard */,
 				844EBA2520F370BE00C30393 /* News.xcdatamodeld */,
 				844EBA2D20F370BE00C30393 /* Info.plist */,
@@ -87,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				844EBA2020F370BE00C30393 /* ViewController.swift */,
+				844EBA3E20F4E15900C30393 /* DropdownViewController.swift */,
 			);
 			path = "View controller";
 			sourceTree = "<group>";
@@ -98,6 +109,15 @@
 				844EBA3C20F37DD300C30393 /* Source+extension.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		844EBA4820F4F4FC00C30393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				844EBA4920F4F51600C30393 /* HeaderView.swift */,
+				844EBA4B20F4F52500C30393 /* HeaderView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +182,7 @@
 				844EBA2C20F370BE00C30393 /* LaunchScreen.storyboard in Resources */,
 				844EBA2920F370BE00C30393 /* Assets.xcassets in Resources */,
 				844EBA2420F370BE00C30393 /* Main.storyboard in Resources */,
+				844EBA4C20F4F52500C30393 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,10 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				844EBA3D20F37DD300C30393 /* Source+extension.swift in Sources */,
+				844EBA4A20F4F51600C30393 /* HeaderView.swift in Sources */,
 				844EBA2120F370BE00C30393 /* ViewController.swift in Sources */,
 				844EBA2720F370BE00C30393 /* News.xcdatamodeld in Sources */,
 				844EBA3B20F37A2E00C30393 /* News+extension.swift in Sources */,
 				844EBA3620F3764500C30393 /* NewsTableViewCell.swift in Sources */,
+				844EBA3F20F4E15900C30393 /* DropdownViewController.swift in Sources */,
+				844EBA4120F4E49300C30393 /* DropdownTableViewCell.swift in Sources */,
 				844EBA1F20F370BE00C30393 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
